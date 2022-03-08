@@ -43,7 +43,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/emailCard"
+        android:id="@+id/fullNameCard"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:layout_marginLeft="10dp"
@@ -55,6 +55,56 @@
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="@+id/cardView"
         app:layout_constraintTop_toTopOf="@+id/cardView">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/name_animation">
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ageCard"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameCard">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/age_animation">
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/emailCard"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/ageCard">
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="50dp"
@@ -92,21 +142,50 @@
 
     </androidx.cardview.widget.CardView>
 
+    <EditText
+        android:id="@+id/nameView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="15dp"
+        android:hint="@string/fullName"
+        android:textColorHint="#40000000"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="5dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/fullNameCard"
+        app:layout_constraintEnd_toEndOf="@+id/fullNameCard"
+        app:layout_constraintStart_toStartOf="@+id/fullNameCard"
+        app:layout_constraintTop_toTopOf="@+id/fullNameCard"
+        android:autofillHints="name"
+        android:inputType="textPersonName" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/loginBtnCard"
-        android:layout_width="145dp"
-        android:layout_height="65dp"
-        android:layout_margin="15dp"
-        android:backgroundTint="#FFE480"
-        app:cardCornerRadius="1000dp"
-        app:cardElevation="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="@+id/cardView"
-        app:layout_constraintHorizontal_bias="0.85"
-        app:layout_constraintStart_toStartOf="@+id/cardView">
-
-    </androidx.cardview.widget.CardView>
+    <EditText
+        android:id="@+id/ageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autofillHints="phone"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:elevation="15dp"
+        android:hint="@string/Age"
+        android:textColorHint="#40000000"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="5dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/ageCard"
+        app:layout_constraintEnd_toEndOf="@+id/ageCard"
+        app:layout_constraintStart_toStartOf="@+id/ageCard"
+        app:layout_constraintTop_toTopOf="@+id/ageCard" />
 
     <EditText
         android:id="@+id/emailView"
@@ -152,6 +231,21 @@
         app:layout_constraintEnd_toEndOf="@+id/passwordCard"
         app:layout_constraintStart_toStartOf="@+id/passwordCard"
         app:layout_constraintTop_toTopOf="@+id/passwordCard" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginBtnCard"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FFE480"
+        app:cardCornerRadius="1000dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/cardView">
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/signUpBtn"

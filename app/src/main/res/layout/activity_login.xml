@@ -203,7 +203,7 @@
             android:layout_height="match_parent"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/twitter_animation">
+            app:lottie_rawRes="@raw/github_animation">
         </com.airbnb.lottie.LottieAnimationView>
 
     </androidx.cardview.widget.CardView>
