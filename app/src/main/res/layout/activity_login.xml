@@ -92,35 +92,20 @@
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/forgetPasswordView"
-        android:layout_width="180dp"
-        android:layout_height="40dp"
-        android:layout_margin="10dp"
-        android:elevation="10dp"
-        android:gravity="center"
-        android:text="@string/forget_password"
-        android:textAlignment="center"
-        android:textColor="#FF7F50"
-        android:textSize="18sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/cardView"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/passwordCard" />
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/loginBtnCard"
         android:layout_width="145dp"
         android:layout_height="65dp"
-        android:layout_margin="15dp"
+        android:layout_margin="35dp"
         android:backgroundTint="#FFE480"
         app:cardCornerRadius="1000dp"
         app:cardElevation="10dp"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/forgetPasswordView">
+        app:layout_constraintTop_toBottomOf="@+id/passwordCard">
 
     </androidx.cardview.widget.CardView>
 
@@ -128,19 +113,20 @@
         android:id="@+id/textView"
         android:layout_width="95dp"
         android:layout_height="30dp"
-        android:layout_margin="10dp"
+        android:layout_margin="40dp"
         android:elevation="10dp"
         android:gravity="center"
         android:text="@string/signup_with"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
+        android:fontFamily="@font/patrick_hand_regular"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/loginBtnCard" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/googleBtn"
+        android:id="@+id/loginWithGoogleBtn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -163,7 +149,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/facebookBtn"
+        android:id="@+id/loginWithFacebookBtn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -186,7 +172,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/twitterBtn"
+        android:id="@+id/loginWithGitHubBtn"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -214,17 +200,18 @@
         android:layout_height="35dp"
         android:elevation="10dp"
         android:gravity="center"
-        android:layout_margin="20dp"
+        android:layout_margin="5dp"
         android:text="@string/new_user"
         android:textAlignment="center"
         android:textColor="#318CE7"
         android:textSize="18sp"
+        android:fontFamily="@font/patrick_hand_regular"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="@+id/cardView" />
 
     <EditText
-        android:id="@+id/emailView"
+        android:id="@+id/emailLgnView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:elevation="15dp"
@@ -236,6 +223,7 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:padding="5dp"
+        android:fontFamily="@font/syne_mono_regular"
         android:autofillHints="emailAddress"
         android:inputType="textEmailAddress"
         android:background="@null"
@@ -246,7 +234,7 @@
         app:layout_constraintTop_toTopOf="@+id/emailCard" />
 
     <EditText
-        android:id="@+id/passwordView"
+        android:id="@+id/passwordLgnView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:autofillHints="password"
@@ -259,6 +247,7 @@
         android:layout_marginEnd="5dp"
         android:textAlignment="textStart"
         android:textColor="@color/black"
+        android:fontFamily="@font/syne_mono_regular"
         android:textSize="18sp"
         android:padding="5dp"
         android:background="@null"
@@ -279,6 +268,7 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:fontFamily="@font/spectra_bold_italic"
         app:layout_constraintBottom_toBottomOf="@+id/loginBtnCard"
         app:layout_constraintEnd_toEndOf="@+id/loginBtnCard"
         app:layout_constraintStart_toStartOf="@+id/loginBtnCard"

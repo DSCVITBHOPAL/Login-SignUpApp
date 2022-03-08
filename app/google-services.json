@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "601353289115",
+    "project_id": "dscjavasolutionchallengeapp",
+    "storage_bucket": "dscjavasolutionchallengeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601353289115:android:6f906a7d25b015a2e8353e",
+        "android_client_info": {
+          "package_name": "com.food.loginsignupapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601353289115-rdrblgg6qrlsnqf339ufjhcc79t8pk23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.food.loginsignupapp",
+            "certificate_hash": "000b32b770b7b1c15f03f5f5180bfb3a1d21b2f4"
+          }
+        },
+        {
+          "client_id": "601353289115-0s6pqn0g1b2seujem738cfrdg41e2cek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4259xJ8BAQpVMZ6YtAU_s2nk1anzfwPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601353289115-0s6pqn0g1b2seujem738cfrdg41e2cek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
