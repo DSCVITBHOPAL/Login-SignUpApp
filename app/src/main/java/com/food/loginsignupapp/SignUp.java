@@ -7,12 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,7 +22,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUp extends AppCompatActivity {
 
-    TextView signUp, name, age, email, password;
+    TextView signUp;
+    EditText name, age, email, password;
     protected FirebaseAuth mAuth;
     protected DatabaseReference dRef;
     FirebaseDatabase database;
@@ -40,11 +40,12 @@ public class SignUp extends AppCompatActivity {
         // Write a message to the database
         dRef = FirebaseDatabase.getInstance().getReference("Users");
 
+
         // Fetching values to save in database
-        name = findViewById(R.id.nameView);
-        age = findViewById(R.id.ageView);
-        email = findViewById(R.id.emailView);
-        password = findViewById(R.id.passwordView);
+        name = findViewById(R.id.nameSgnView);
+        age = findViewById(R.id.ageSgnView);
+        email = findViewById(R.id.emailSgnView);
+        password = findViewById(R.id.passwordSgnView);
 
 
         // getting sign up button an setting on click listener on it
