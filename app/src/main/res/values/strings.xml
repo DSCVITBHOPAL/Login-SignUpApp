@@ -9,4 +9,9 @@
     <string name="signup">SignUp</string>
     <string name="fullName">Full Name</string>
     <string name="Age">Age</string>
+
+    <string name="facebook_app_id">637454847553178</string>
+    <string name="facebook_client_token">725fb7f0c190dd3a434d3a51318c0fdf</string>
+
+
 </resources>

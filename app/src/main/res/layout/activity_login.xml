@@ -162,6 +162,7 @@
 
     </androidx.cardview.widget.CardView>
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/facebookBtn"
         android:layout_width="60dp"
@@ -182,6 +183,7 @@
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/facebook_animation">
         </com.airbnb.lottie.LottieAnimationView>
+
 
     </androidx.cardview.widget.CardView>
 

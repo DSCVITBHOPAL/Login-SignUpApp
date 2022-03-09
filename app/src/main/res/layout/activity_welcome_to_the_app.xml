@@ -8,6 +8,7 @@
     tools:context=".WelcomeToTheApp">
 
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/logout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:lottie_autoPlay="true"
