@@ -25,9 +25,7 @@ public class SignUp extends AppCompatActivity {
     TextView signUp;
     EditText name, age, email, password;
     protected FirebaseAuth mAuth;
-    protected DatabaseReference dRef;
-    FirebaseDatabase database;
-    User user;
+    protected DatabaseReference mDatabase;
 
 
     @Override
@@ -37,9 +35,6 @@ public class SignUp extends AppCompatActivity {
 
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-        // Write a message to the database
-        dRef = FirebaseDatabase.getInstance().getReference("Users");
-
 
         // Fetching values to save in database
         name = findViewById(R.id.nameSgnView);
@@ -84,10 +79,12 @@ public class SignUp extends AppCompatActivity {
     }
 
     private void databaseCreation() {
-        user = new User(name.getText().toString(),age.getText().toString(),email.getText().toString(),password.getText().toString());
-        database = FirebaseDatabase.getInstance();
-        dRef = database.getReference("User");
-        dRef.setValue(user);
-        Toast.makeText(SignUp.this, "Databse Created!", Toast.LENGTH_SHORT).show();
+        // Write a message to the database
+        mDatabase = FirebaseDatabase.getInstance().getReference("Users");
+
+        User user = new User(name.getText().toString().trim(),age.getText().toString().trim(),email.getText().toString().trim(),password.getText().toString().trim());
+
+        mDatabase.child(name.getText().toString().trim()).setValue(user);
+        Toast.makeText(SignUp.this, "Database Created!", Toast.LENGTH_SHORT).show();
     }
 }
