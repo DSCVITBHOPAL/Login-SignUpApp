@@ -42,10 +42,8 @@ dependencies {
 
     // Authentication dependencies
 
-
     // Import the BoM for the Firebase platform
     implementation platform('com.google.firebase:firebase-bom:29.1.0')
-
 
     // Declare the dependency for the Firebase Authentication library
     // When using the BoM, you don't specify versions in Firebase library dependencies
@@ -59,7 +57,5 @@ dependencies {
 
     // Facebook Sign in dependency
     implementation 'com.facebook.android:facebook-login:latest.release'
-
-
 
 }
