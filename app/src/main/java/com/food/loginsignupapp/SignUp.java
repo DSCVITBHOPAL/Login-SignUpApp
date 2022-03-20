@@ -26,8 +26,6 @@ public class SignUp extends AppCompatActivity {
     EditText name, age, email, password;
     protected FirebaseAuth mAuth;
     protected DatabaseReference mDatabase;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,6 +72,8 @@ public class SignUp extends AppCompatActivity {
                             }
                         }
                     });
+
+
 
         });
     }
